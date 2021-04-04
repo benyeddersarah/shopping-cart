@@ -1,0 +1,182 @@
+
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+<title>shopping</title>
+
+</head>
+<body>
+<div class="navli">
+<h1>SHOP</h1>
+<ul class="nav-links">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About us </a></li>
+</ul>
+</div>
+<button class="button">switch color</button>
+<script type="text/javascript">
+var color = ["#222f3e","#f368e0","#ee5253","#0abde3","#10ac84","#222f3e","#5f27cd","#e6e6fa","#edcaa6","#e6faf0","#281808","#eabf94","#080502","#330022","#ff6666","#99ff99","#003329","#ffcc99"];
+var i = 0;
+document.querySelector("button").addEventListener("click",
+function(){
+  i = i < color.length ? ++i : 0;
+  document.querySelector("body").style.background = color[i]
+} )  
+</script>
+ <div id="container">
+    <table>
+      <!--<tr style="text-align:center;">
+        <td>Image</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Amount</td>
+        <td>Subtotal</td>
+        <td> </td>
+      </tr>-->
+      <tr class="p">
+        <td class="image"><img src=https://www.bhphotovideo.com/images/images2500x2500/apple_mvj92ll_a_256gb_ipod_touch_7th_1482847.jpg /></td>
+        <td class="name">iPod touch</td>
+        <td class="price">299.99TDN</td>
+        <td class="amount"><input type="number" value="1" min="0" /></td>
+        <td class="pricesubtotal"></td>
+        <td class="remove"><div>&times</div></td>
+      </tr>
+      <tr class="p">
+        <td class="image"><img src=https://parkerpens.net/languages/bilder_pennor/centennial/black-1200.jpg /></td>
+        <td class="name">Pack of 5 pens</td>
+        <td class="price">4.99TDN</td>
+        <td class="amount"><input type="number" value="3" min="0" /></td>
+        <td class="pricesubtotal"></td>
+        <td class="remove"><div>&times</div></td>
+      </tr>
+      <tr class="p">
+        <td class="image"><img src="https://tabletmonkeys.com/images/2019/08/Surface-Pro-Tabletmonkeys-660x440.jpg" /></td>
+        <td class="name">Microsoft Surface</td>
+        <td class="price">599.99TDN</td>
+        <td class="amount">
+          <input type="number" value="1" min="0" />
+        </td>
+        <td class="pricesubtotal"></td>
+        <td class="remove"><div>&times</div></td>
+      </tr>
+      <tr class="p">
+        <td class="image"><img src="https://rosearch.files.wordpress.com/2015/02/url.jpg" /></td>
+        <td class="name">Books</td>
+        <td class="price">29.99TDN</td>
+        <td class="amount"><input type="number" value="5" min="0" /></td>
+        <td class="pricesubtotal"></td>
+        <td class="remove"><div>&times</div></td>
+      </tr>
+      <tr class="p">
+        <td class="image"><img src="https://th.bing.com/th/id/Rbeab7adba6f2715aec5a49edcb8bd258?rik=w7jGKaQeH9UIVQ&riu=http%3a%2f%2fliliebakery.fr%2fwp-content%2fuploads%2f2013%2f06%2fcupcake-oreo-liliebakery-1-520x400.jpg&ehk=S3qQowIdYQp3XTvqsqUBwtcSjZmtEMsFVPe0UzR%2bdCo%3d&risl=&pid=ImgRaw" /></td>
+        <td class="name">Cupcakes</td>
+        <td class="price">0.99TDN</td>
+        <td class="amount"><input type="number" value="20" min="0" /></td>
+        <td class="pricesubtotal"></td>
+        <td class="remove"><div>&times</div></td>
+      </tr>
+      <tr class="p">
+        <td class="image"><img src="https://wallpapercave.com/wp/aQYqiR5.png" /></td>
+        <td class="name">Pokémon Red</td>
+        <td class="price">49.99TDN</td>
+        <td class="amount"><input type="number" value="2" min="0" /></td>
+        <td class="pricesubtotal"></td>
+        <td class="remove"><div>&times</div></td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>Subtotal:</td>
+        <td class="totalpricesubtotal"></td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td style="border-top:1px solid white" colspan="6"><br />
+          With 5% sales tax <span class="taxval"></span> and <span class="shipping">10</span>TDN shipping:<br />
+          <span class="big">Total:0 <span class="realtotal">TDN</span></span>
+        </td>
+      </tr>
+    </table>
+      <div id="checkout">Checkout<span> &rarr;</span></div>
+    <div id="footer">
+      <ul>
+        <li>Change the amount of stuff and see the subtotal and total change</li>
+        <li>Try to change the amount of items to minus amounts or 0</li>
+        <li>Delete items and see the totals change</li>
+      </ul>
+      <hr />
+      <a href="https://codepen.io/tag/rodeo-007">CodePen Pattern Rodeo</a>.<br />
+      you can find everythig here
+    </div>
+    </div>
+
+
+   <!--
+
+     <div class="articles">
+    <div class="article1">
+        <h3>Top col carré</h3>
+        <p> 
+          Description
+          Top col carré
+         Manches longues bouffantes avec poignets
+         Détails froncés sur le devant 
+         <br>
+         TAILLE : XS / S / M 
+         <br>
+         PRIX : 40TND
+</p>
+<img class="img" src="https://hamedia.b-cdn.net/catalog/product/cache/1/small_image/1920x/17f82f742ffe127f42dca9de82fb58b1/d/s/dsc08359.jpg" alt="img1">
+<a class="add-cart 1" href="#">add cart </a>
+
+</div>
+    <br>
+    <div class="article2">   
+        <h3>Robe courte femme</h3>
+        <p>Robe courte femme 
+             <br>
+                TAILLE : XS / S / M 
+                <br>
+                PRIX : 90TND 
+        </p>
+        <img src="https://hamedia.b-cdn.net/catalog/product/cache/1/small_image/1920x/17f82f742ffe127f42dca9de82fb58b1/d/s/dsc08713_1.jpg" alt="img2">
+        <a class="add-cart 2" href="#">add cart </a>
+    </div>
+    
+    
+    <div class="articla3">
+<h3> Blouse col bardot</h3>
+<p> Blouse col bardot
+    <br>
+                TAILLE : XS / S / M 
+                <br>
+                PRIX : 50TND
+</p>
+<img src="https://hamedia.b-cdn.net/catalog/product/cache/1/small_image/1920x/17f82f742ffe127f42dca9de82fb58b1/d/s/dsc08343.jpg" alt="img3">
+<a class="add-cart 3" href="#">add cart </a>
+</div>
+ <div>   
+     <h3>Jeans femme</h3>
+     <p>Jeans femme
+        <br>
+        TAILLE : XS / S / M 
+        <br>
+        PRIX : 70TND
+     </p>
+     <img src="https://hamedia.b-cdn.net/catalog/product/cache/1/small_image/1920x/17f82f742ffe127f42dca9de82fb58b1/d/s/dsc05580.jpg" alt="img4">
+     <a class="add-cart 4" href="#">add cart </a>
+    </div>
+</div>
+<script src="/js/script.js"></script>
+</bo
+
+
+
+-->
+</html> 
